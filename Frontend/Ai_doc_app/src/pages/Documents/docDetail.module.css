@@ -1,0 +1,118 @@
+@import '../../index.css';
+
+.doc_page {
+  padding: 30px 40px;
+}
+
+.back_link {
+  color: gray;
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.back_link:hover {
+  font-weight: bold;
+  color: #1f1f1f;
+}
+
+.doc_title {
+  margin: 10px 0 15px;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 15px;
+}
+
+.tab {
+  padding: 0 18px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  color: gray;
+  border: none;
+  font-weight: 600;
+  outline: none;
+  background: transparent;
+}
+
+.tab.active {
+  color: #21c17a;
+  border-bottom: 2px solid #21c17a;
+}
+
+/* Viewer */
+.viewer_header {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 15px;
+  border-radius: 10px 10px 0 0;
+}
+
+.open_link {
+  color: #21c17a;
+  text-decoration: none;
+}
+
+/* PDF */
+.pdf_viewer {
+  display: flex;
+  max-height: 415px;
+  background: #2b2b2b;
+  border-radius: 0 0 12px 12px;
+  height: 480px;
+}
+
+.pdf_sidebar {
+  width: 90px;
+  padding: 10px;
+  background: #1f1f1f;
+}
+
+.page_thumb {
+  height: 90px;
+  background: #ccc;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+.page_thumb.active {
+  border: 3px solid #21c17a;
+}
+
+/* PDF Content */
+.pdf_content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.pdf_toolbar {
+  color: white;
+  padding: 8px 15px;
+  display: flex;
+  gap: 20px;
+  background: #3a3a3a;
+}
+
+.pdf_page {
+  flex: 1;
+  background: white;
+  margin: 15px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.viewerCont {
+    padding: 6px;
+    border: 2px solid #aeaeae;
+    border-radius: 9px;
+    min-height: 475px;
+    box-shadow: 0 0 7px #1f1f1f8f;
+}

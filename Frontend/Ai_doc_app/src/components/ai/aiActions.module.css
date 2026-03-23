@@ -1,0 +1,129 @@
+.page {
+    padding: 22px 40px;
+}
+
+.ai_wrapper {
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  margin-top: 20px;
+}
+
+/* Header */
+.ai_header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 8px;
+  background: linear-gradient(#50e4a2, #01a65c);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  margin-left: 20px;
+  box-shadow: 2px 2px 4px #2f3231f4;
+}
+
+/* Rows */
+.ai_action_row, .ai_action_column {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px 0 ; 
+  padding: 13px 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 4px #392f2f9d;
+  transition: all 0.2s;
+  background-color: #ffffffb9;
+}
+
+.ai_action_row:hover, .ai_action_column:hover {
+  box-shadow: 2px 2px 6px #2f3231d1;
+}
+
+.ai_action_row p,
+.ai_action_column p {
+  font-size: 14px;
+  color: gray;
+  margin-top: 3px;
+}
+
+/* Explain Section */
+.ai_action_column {
+  align-items: start;
+  flex-direction: column;
+  padding-bottom: 18px;
+}
+
+.explain_input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.explain_input input {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  border: 2px solid #cfd1d0f0;
+}
+
+.explain_input input:focus {
+  outline: 2px solid #29d185;
+}
+
+.primary_btn, .explain_input button {
+  background: linear-gradient(45deg, #14d07f, #059936);
+  color: white;
+  border: none;
+  padding: 9px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.primary_btn:hover, .explain_input button:hover {
+  box-shadow: 2px 2px 4px #323433;
+}
+
+.primary_btn:disabled, .explain_input button:disabled {
+  opacity: 0.5;
+}
+
+.sum_lgo, .exp_lgo {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 7px;
+  border-radius: 8px;
+}
+
+.sum_lgo {
+  background-color: #78e8e8eb;
+  color: #2345b6;
+  box-shadow: 0 0 2px #3a5ac462;
+}
+
+.exp_lgo {
+  background-color: #efcb2e;
+  color: #975e02;
+  box-shadow: 0 0 2px #eb3df163;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}

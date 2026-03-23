@@ -1,0 +1,155 @@
+
+.quiz_container {
+  padding: 40px 60px 0 60px;
+  background: #f7f9fc;
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.quiz_title {
+  margin-bottom: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Progress Section */
+
+.quiz_progress_header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 26px;
+  max-width: 1120px;
+}
+
+.question_count {
+  font-size: 14px;
+  font-weight: 600;
+  color: #555;
+}
+
+.progress_bar {
+  width: 95%;
+  height: 6px;
+  background: #e6ecf2;
+  border-radius: 20px;
+  margin-top: 8px;
+  overflow: hidden;
+}
+
+.progress_fill {
+  transition: all 0.4s ease;
+  height: 100%;
+  background: linear-gradient(90deg, #2ecc71, #1abc9c);
+}
+
+.answered_count {
+  font-size: 14px;
+  color: #888;
+}
+
+/* Card */
+
+.quiz_card {
+  background: white;
+  border-radius: 20px;
+  padding: 28px 40px;
+  box-shadow: 0 15px 35px #0e0e0e20;
+  width: 100%;
+  max-width: 1120px;
+}
+
+.question_badge {
+  display: inline-block;
+  background: #eaf7ef;
+  color: #27ae60;
+  font-size: 13px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 17px;
+  font-weight: 600;
+}
+
+.question_text {
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Options */
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px 18px;
+  border-radius: 12px;
+  border: 1px solid #e4e9f0;
+  cursor: pointer;
+  background: #fafbfd;
+}
+
+.option:hover {
+  background: #f0f7f4;
+}
+
+.option input {
+  width: 18px;
+  height: 18px;
+}
+
+.option span {
+  font-size: 14px;
+  color: #444;
+}
+
+/* Selected State */
+.option.selected {
+  border: 2px solid #27ae60;
+  background: #f2f8f5;
+}
+
+/* Navigation */
+
+.quiz_navigation {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1120px;
+}
+
+.nav_btn {
+  background: #e3e5e7;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav_btn:hover {
+  background: #d6dde6;
+}
+
+.next_btn {
+  background: linear-gradient(135deg, #2ecc71, #1abc9c);
+  border: none;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.next_btn:hover {
+  opacity: 0.9;
+}

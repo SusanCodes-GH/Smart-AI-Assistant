@@ -1,0 +1,252 @@
+.results_container {
+  padding: 40px;
+  background: #f7f9fc;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.back_link span {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.results_title {
+  margin-bottom: 30px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Score Card */
+
+.score_card {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 15px 35px #22232331;
+  margin-bottom: 40px;
+}
+
+.score_icon {
+  font-size: 40px;
+  background: #d3fce3;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 20px;
+  border-radius: 20px;
+  color: #27ae60;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 12px #16181734;
+}
+
+.score_label {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.score_value {
+  font-size: 48px;
+  font-weight: bold;
+  color: #27ae60;
+}
+
+.score_message {
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  color: #444;
+}
+
+.score_stats {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.stat {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  background: #eef1f6;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.stat.correct {
+  background: #eaf7ef;
+  color: #27ae60;
+}
+
+.stat.incorrect {
+  background: #fdeaea;
+  color: #e74c3c;
+}
+
+/* Detailed Review */
+
+.review_title {
+  margin-bottom: 20px;
+  margin-left: 8px;
+  font-weight: 600;
+  color: #333;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.review_card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+  margin-bottom: 30px;
+}
+
+.review_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 12px;
+}
+
+.ques {
+  display: inline-flex;
+  padding: 5px 8px;
+  border: 1.5px dashed gray;
+  border-radius: 6px;
+  background-color: #f2f8f7;
+}
+
+.bdg {
+  padding: 9px;
+  border-radius: 8px;
+  background-color: #f2f8f7;
+  display: inline-flex;
+  align-items: center;
+}
+
+.correct_badge {
+  background: #eaf7ef;
+  color: #27ae60;
+  padding: 6px 12px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.review_question {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.review_options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.review_option {
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 2px solid #e4e9f0;
+  background: #fafbfd;
+  font-size: 14px;
+  position: relative;
+}
+
+.correct_answer {
+  border: 2px solid #44ce7d;
+  background: #bcf6d4;
+  position: relative;
+  box-shadow: 0 0 10px #1ae97056;
+}
+
+.usrWrong {
+  background-color: #f1d1d1;
+  border: 2px solid gray;
+  box-shadow: 0 0 10px #e570706a;
+}
+
+.answer_tag, .ans_tag_w {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.answer_tag {
+  background: #27ae60;
+  color: white;
+}
+
+.ans_tag_w {
+  background-color: #ebf4f2;
+}
+
+/* Explanation */
+
+.explanation_box {
+  margin-top: 20px;
+  background: #e9f2fe;
+  padding: 15px;
+  border-radius: 12px;
+  font-size: 14px;
+  box-shadow: 0 0 13px #2323234e;
+}
+
+.exp {
+    display: inline-flex;
+    gap: 10px;
+}
+
+.explanation_box strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Return Button */
+
+.return_container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.return_btn {
+  background: linear-gradient(135deg, #2ecc71, #1abc9c);
+  border: none;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.return_btn:hover {
+  opacity: 0.9;
+}
+
+.lgo {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px;
+  border-radius: 10px;
+  background-color: #dde3e6;
+}

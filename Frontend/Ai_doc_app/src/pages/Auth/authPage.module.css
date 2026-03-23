@@ -1,0 +1,89 @@
+@import '../../index.css';
+
+.auth_section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8fafc;
+}
+
+.auth_card {
+  background: #fff;
+  padding: 40px;
+  max-width: 390px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0px 20px #1e1f1f90;
+  text-align: center;
+}
+
+.logo {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 50px;
+  font-size: 40px;
+  margin-bottom: 10px;
+  border-radius: 18px;
+  background-color: #10b981;
+  color: #fff;
+}
+
+.form {
+  margin: 20px 6px;
+}
+
+.input_group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 3px 12px;
+  border: 2px solid #b0b4b2;
+  border-radius: 10px;
+}
+
+.input_group div {
+  display: inline-flex;
+  align-items: center;
+}
+
+.input_group input {
+  padding: 8px 10px;
+  margin-top: 0;
+  border: none;
+  outline: none;
+}
+
+.errP {
+  color: #f13131;
+  font-size: 9px;
+  margin-bottom: 10px;
+}
+
+.btn_primary {
+  width: 100%;
+  padding: 12px;
+  background: #10b981;
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.switch_text {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.switch_text p {
+  margin: 9px 0 15px 0;
+  font-size: 10px;
+}
+
+.switch_text a {
+  color: #10b981;
+  text-decoration: none;
+  font-weight: bold;
+}

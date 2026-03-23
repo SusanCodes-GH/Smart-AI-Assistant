@@ -1,0 +1,167 @@
+.cntr {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.emp_box {
+  margin-top: 5%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.emp_box div h3 {
+  margin-bottom: 4px;
+}
+
+.emp_box div p {
+  color: #9e9a9a;
+}
+
+.lgo {
+  padding: 11px;
+  font-size: 20px;
+  background-color: #e3dada;
+  border-radius: 8px;
+}
+
+.doc_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.page {
+  padding: 30px 40px;
+}
+
+
+/* GRID */
+
+.flashcards_grid{
+  display:flex;
+  gap:25px;
+  flex-wrap:wrap;
+}
+
+/* CARD */
+
+.flashcard_card{
+  width:300px;
+  background:white;
+  padding:25px;
+  border-radius:18px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.05);
+  border:2px solid transparent;
+  transition:0.2s;
+}
+
+.flashcard_card:hover{
+  border:2px solid #2ecc71;
+}
+
+/* HEADER */
+
+.card_header{
+  display:flex;
+  gap:15px;
+  margin-bottom:15px;
+}
+
+.icon{
+  background:#eaf7ef;
+  color:#2ecc71;
+  font-size:20px;
+  width:45px;
+  height:45px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:10px;
+}
+
+.card_header h3{
+  margin:0;
+  font-size:16px;
+}
+
+.created{
+  font-size:12px;
+  color:#888;
+}
+
+/* BADGES */
+
+.card_stats{
+  display:flex;
+  gap:10px;
+  margin:10px 0 15px 0;
+}
+
+.badge{
+  background:#f0f2f6;
+  padding:6px 12px;
+  border-radius:15px;
+  font-size:12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.badge.success{
+  background:#eaf7ef;
+  color:#2ecc71;
+}
+
+/* PROGRESS */
+
+.progress_text{
+  display:flex;
+  justify-content:space-between;
+  font-size:12px;
+  color:#666;
+  margin-bottom:6px;
+}
+
+.progress_bar{
+  width: auto;
+  height:6px;
+  background:#e8edf3;
+  border-radius:10px;
+  overflow:hidden;
+  margin-bottom:20px;
+}
+
+.progress_fill{
+  height:100%;
+  background:#2ecc71;
+}
+
+/* BUTTON */
+
+.study_btn{
+  width:100%;
+  padding:12px;
+  border:none;
+  border-radius:10px;
+  font-size:14px;
+  font-weight: 500;
+  cursor:pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  background:#ebf7f1;
+  color:#1a944d;
+  transition: 0.3s;
+}
+
+.study_btn:hover{
+  background:linear-gradient(135deg,#2ecc71,#1abc9c);
+  color:white;
+}

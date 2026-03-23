@@ -1,0 +1,111 @@
+@import '../../index.css';
+
+
+/* Container */
+.dashboard_container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.dashboard_header {
+  height: 60px;
+  background-color: #1e1e2f;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px 20px;
+}
+
+.app_name {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.prof {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 43px;
+  height: 40px;
+  font-size: 20px;
+  border-radius: 18px;
+  background-color: #3f3f5a;
+  color: #fff;
+}
+
+.app_name h3 {
+  margin-left: 8px;
+}
+
+/* Profile */
+
+.profile_info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 13px;
+  margin-right: 15px;
+}
+
+.profile_info span {
+    font-size: 12px;
+}
+
+/* Main Layout */
+.dashboard_main {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background-color: #2c2c3c;
+  color: white;
+  flex-shrink: 0;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+}
+
+.sidebar nav button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.menu_item {
+  padding: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: 0 12px;
+  border-radius: 10px;
+}
+
+.menu_item:hover {
+  background-color: #3f3f5a;
+}
+
+/* Content Area */
+.content {
+  flex: 1;
+  background-color: #f5f5f5;
+  overflow-y: auto;
+}
+
+.active {
+  background-color: #21c17a;
+  color: #fff;
+}

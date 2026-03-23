@@ -1,0 +1,292 @@
+@import '../../index.css';
+
+/* Overlay */
+.modal_overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Modal box */
+.modal_box {
+  background: #ffffff;
+  width: 420px;
+  border-radius: 14px;
+  padding: 25px;
+  position: relative;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+/* Close */
+.close_btn {
+  position: absolute;
+  right: 5%;
+  top: 6%;
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Icon */
+.modal_icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin: 0 auto 15px;
+}
+
+.modal_icon.danger {
+  background: #fde2e2;
+  color: #e63946;
+}
+
+/* Text */
+.modal_text {
+  color: #555;
+  font-size: 14px;
+  margin: 10px 0 20px;
+}
+
+/* Buttons */
+.modal_actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.btn {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn.cancel {
+  background: #f1f1f1;
+}
+
+.btn.delete {
+  background: #e63946;
+  color: white;
+}
+
+
+
+
+
+.doc_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.upload_btn {
+  display: inline-flex;
+  align-items: center;
+  background: #21c17a;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  gap: 5px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Documents */
+.doc_grid {
+  display: flex;
+  gap: 20px;
+}
+
+.doc_card {
+  background: #f4fbf9;
+  padding: 22px;
+  width: 100%;
+  max-width: 350px;
+  min-width: 300px;
+  border-radius: 15px;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.doc_card:hover {
+  box-shadow: 2px 2px 10px #202020;
+}
+
+.doc_icon {
+  width: 45px;
+  height: 45px;
+  background: #21c17a;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.delete_btn {
+  position: absolute;
+  top: 12%;
+  right: 7%;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.doc_tags {
+  display: flex;
+  margin: 15px 0;
+  font-size: 13px;
+}
+
+.flash, .quiz {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 5px 9px;
+  border-radius: 12px;
+  background-color: #dfe2e1;
+  transform: scale(0.9);
+}
+
+.flash {
+  color: #e35bb7;
+}
+
+.quiz {
+  color: #21c17a;
+}
+
+.time {
+  display: flex;
+  gap: 3px;
+  color: gray;
+}
+
+
+
+.cntr {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.emp_box {
+  margin-top: 5%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.emp_box div h3 {
+  margin-bottom: 4px;
+}
+
+.emp_box div p {
+  color: #9e9a9a;
+}
+
+.lgo {
+  padding: 11px;
+  font-size: 20px;
+  background-color: #e3dada;
+  border-radius: 8px;
+}
+
+.upd {
+  background-color: #21c17a;
+  padding: 13px 22px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  color: #fff;
+  margin: 5px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+
+
+
+
+.upload_modal {
+  text-align: left;
+}
+
+.modal_subtitle {
+  color: gray;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 13px;
+  font-weight: 500;
+  display: block;
+  margin-top: 12px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-top: 6px;
+}
+
+/* File Upload */
+.file_drop {
+  margin-top: 8px;
+  border: 2px dashed #cdeee4;
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
+  background: #f6fdfb;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.file_drop input {
+  display: inline-flex;
+  width: 83%;
+  height: 35%;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.btn.upload {
+  background: #21c17a;
+  color: white;
+  box-shadow: 2px 3px 8px #0fbb2e46;
+}
+
+.page {
+  padding: 30px 40px;
+}
